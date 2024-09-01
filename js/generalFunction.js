@@ -65,3 +65,14 @@ function isPrime(number) {
 
   return true;
 }
+
+
+/**
+ * Rimuove i duplicati da un array.
+ * 
+ * @param {Array} array - L'array da cui rimuovere i duplicati.
+ * @returns {Array} Un nuovo array senza duplicati.
+ */
+function removeDuplicates(array) {
+  return [...new Set(array)];
+}
