@@ -26,3 +26,23 @@ function updatePalindromeResult(word, resultElement) {
   }
 }
 
+/**
+ * Genera un numero intero casuale tra due valori inclusi.
+ * 
+ * @param {number} min - Il valore minimo (incluso) che il numero generato può assumere.
+ * @param {number} max - Il valore massimo (incluso) che il numero generato può assumere.
+ * @returns {number} Un numero intero casuale compreso tra min e max (inclusi).
+ */
+function generateRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+/**
+ * Determina se un numero è pari.
+ * 
+ * @param {number} number - Il numero da verificare.
+ * @returns {boolean} True se il numero è pari, false se è dispari.
+ */
+function isEven(number) {
+  return number % 2 === 0;
+}
